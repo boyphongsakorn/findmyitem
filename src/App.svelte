@@ -15,7 +15,7 @@
   </header-->
 
   <main>
-    <Route path="item" component={Item} />
+    <Route path="/item" component={Item} />
 
     <Route path="/">
       <h3>Home</h3>
