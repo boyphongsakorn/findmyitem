@@ -1,8 +1,6 @@
 <script>
-  import { Router, Route, Link } from "svelte-navigator";
   //get id from url params
   const id = new URLSearchParams(window.location.search).get("id");
-  //export let blogRoute;
 </script>
   
   <div class="Item">
