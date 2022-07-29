@@ -2,7 +2,7 @@ import Item from './Item.svelte'
 
 const routes = [
   {
-    name: '/item',
+    name: 'item',
     component: Item,
   },
   /*{ name: 'login', component: Login, layout: PublicLayout },
