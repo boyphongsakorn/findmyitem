@@ -1,19 +1,9 @@
 <script>
-  //get url
-  const url = new URL(window.location.href);
-  //get path from url
-  const path = url.pathname;
-  import Item from "./Item.svelte";
+  import { Router } from 'svelte-router-spa'
+  import { routes } from './routes.js'
 </script>
 
-  <main>
-    {#if (path === "/")}
-    test
-    {/if}
-    {#if (path === "/item")}
-    <Item />
-    {/if}
-  </main>
+<Router {routes} />
 
 <style>
 	:global(:target) {
