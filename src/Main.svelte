@@ -1,6 +1,6 @@
 <script>
     
-  </script>
+</script>
   
   <main>
     Welcome

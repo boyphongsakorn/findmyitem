@@ -5,14 +5,18 @@
   const path = window.location.pathname;
   console.log(path);
   console.log(window.location.href)
-  //console window.location.href after #/
-  const url = window.location.href.split('#/')[1];
-  //remove after ?
-  const url2 = url.split('?')[0];
-  console.log(url2);
+  let url;
+  let urlfinal;
+  try {
+    //console window.location.href after #/
+    url = window.location.href.split('#/')[1];
+    urlfinal = url.split('?')[0];
+  } catch (error) {
+    urlfinal = 'main';
+  }
 </script>
 
-{#if url2 == 'item'}
+{#if urlfinal == 'item'}
   <Item/>
 {:else}
   <Main/>
