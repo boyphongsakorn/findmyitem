@@ -1,10 +1,15 @@
 <script>
-  //get id from url params
-  const id = new URLSearchParams(window.location.search).get("id");
+  function getParam(get){
+    var url_string = window.location.href.replace('#/', '');
+    var url = new URL(url_string);
+    var c = url.searchParams.get(get);
+    console.log(c);
+    return c;
+  }
 </script>
   
   <div class="Item">
-    <h2>{id} ไอเทม : Fino</h2>
+    <h2>{getParam('id')} ไอเทม : Fino</h2>
     <img src="https://inwfile.com/s-cb/n1gnk1.jpg" alt="">
     <!-- owner,addtime,last see,last gps -->
     <p>
