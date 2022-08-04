@@ -1,9 +1,8 @@
 <script>
-  import { Router } from 'svelte-router-spa'
-  import { routes } from './routes'
+  import Item from "./Item.svelte";
 </script>
 
-<Router {routes} />
+<Item/>
 
 <style>
 	:global(:target) {
