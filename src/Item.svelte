@@ -1,7 +1,6 @@
 <script>
   function getParam(get){
-    // var url_string = window.location.href.replace('#/', '');
-    var url_string = window.location.href;
+    var url_string = window.location.href.replace('#/', '');
     var url = new URL(url_string);
     var c = url.searchParams.get(get);
     console.log(c);
