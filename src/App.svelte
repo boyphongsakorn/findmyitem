@@ -9,9 +9,8 @@
   let urlfinal;
   try {
     //console window.location.href after #/
-    // url = window.location.href.split('#/')[1];
-    // urlfinal = url.split('?')[1];
-    urlfinal = path.split('/')[1];
+    url = window.location.href.split('#/')[1];
+    urlfinal = url.split('?')[0];
   } catch (error) {
     urlfinal = 'main';
   }
