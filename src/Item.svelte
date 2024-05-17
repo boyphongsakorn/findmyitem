@@ -1,6 +1,7 @@
 <script>
   function getParam(get){
-    var url_string = window.location.href.replace('#/', '');
+    // var url_string = window.location.href.replace('#/', '');
+    var url_string = window.location.href;
     var url = new URL(url_string);
     var c = url.searchParams.get(get);
     console.log(c);
@@ -26,8 +27,8 @@
       <a href="https://www.facebook.com/profile.php?id=100009180981801">
         <button>แจ้งหาย</button>
       </a>
-      <a href="https://www.facebook.com/profile.php?id=100009180981801">
+      <!-- <a href="https://www.facebook.com/profile.php?id=100009180981801">
         <button>อัปเดตที่อยู่ล่าสุด</button>
-      </a>
+      </a> -->
     </p>
   </div>  
